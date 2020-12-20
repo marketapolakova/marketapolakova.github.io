@@ -1,0 +1,111 @@
+
+.nadpis{
+    position: relative;
+    z-index: 1;
+}
+/* navbar */
+
+    
+
+.navbar {
+    background-color: #DEC6B6;
+    
+    
+    
+    
+     
+}
+.navbar-brand {
+    
+    position: relative;
+    z-index: 2;
+    color: white !important;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+}
+
+.vl {
+    border-left: 7rem solid #6a097d;
+    height: 456%;
+    position:absolute;
+    z-index: 1;
+    margin-top: 12rem;
+    margin-left: 0.5%;
+    display: inline-flexbox;
+  }
+
+/* uvod */
+#uvod{
+    background-color: #DEC6B6;
+    color: white;
+    padding-bottom: 11%;
+    
+
+}
+
+
+.profilova-fotka{
+    width: 80%;
+    border-radius: 100%;
+    position: absolute;
+    border: solid 1rem #6a097d;
+    right: 8rem;
+    display: inline-flexbox;
+    
+ 
+}
+
+.jmeno{
+    
+     background-color: #6a097d;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 11rem;
+    margin-left: 4.4rem;
+    display: inline-flexbox;
+    
+    
+    
+}
+@media(max-width: 1000px)
+{
+    .jmeno {
+        margin-top: 0rem;
+        margin-left: 0em;
+    }
+    .vl{
+        border: none;
+    }
+
+    .navbar-brand {
+        background-color: #DEC6B6;
+        position: static;
+        z-index: none;
+        color: black !important;
+  
+        
+    }
+    
+    .profilova-fotka {
+        border: none;
+        border-bottom: solid 0.3rem #5c2626;
+        border-radius: 0rem;
+        width: 100%;
+        position: relative;
+        right: 0;
+        
+        
+    }
+    .navbar{
+        position: relative !important;
+        
+    }
+    .container-fluid {
+        width: 100%;
+    }
+}
+
+
+    

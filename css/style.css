@@ -40,6 +40,20 @@
     color: white !important;
 }
 
+.dovednosti-nadpis{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    color: white;
+    text-decoration: underline #DEC6B6 0.3rem;
+    padding-bottom: 2rem;
+}
+
+
+p{
+    font-family: "ubuntu";
+    font-size: 1.2rem;
+}
+
 /* navbar */
 
     
@@ -131,6 +145,7 @@
     width: 40%;
 }
   /* pracovni zkusenosti */
+ 
 
   #zamestnani{
     background-color: #DEC6B6;
@@ -165,4 +180,52 @@
     width: 55%;
 
 }
+/* Dovednosti */
+#dovednosti{
+    background-color:#5C2626;    
+}
+.pandulak{
+    margin-right: 0.5rem;
+}
+
+.vycet{
+    text-align: center;
+    color: white;
+}
+.kontejner{
+    margin-bottom: 2rem;
+}
+.it{
+    color: white;
+    text-align: center;
     
+}
+.kolonka{
+    text-align: right;
+    
+}
+.office{
+    text-align: left;
+}
+
+.html-logo{
+    width: 10%;
+    
+}
+.css-logo{
+    width: 10%;
+}
+.bootstrap-logo{
+    width: 10%;
+    
+}
+.word-logo{
+    width: 10%;
+}
+.excel-logo{
+    width: 10%;
+}
+.powerpoint-logo{
+    width: 10%;
+}
+

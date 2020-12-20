@@ -1,0 +1,41 @@
+@media(max-width: 1000px)
+{
+    .jmeno {
+        margin-top: 0rem;
+        margin-left: 0em;
+        
+    }
+    .nadpis{
+       letter-spacing: 0em; 
+    }
+    .vl{
+        border: none;
+    }
+
+    .navbar-brand {
+        background-color: #DEC6B6;
+        position: static;
+        z-index: none;
+        color: black !important;
+  
+        
+    }
+    
+    .profilova-fotka {
+        border: none;
+        border-bottom: solid 0.3rem #5F4B8BFF;
+        border-radius: 0rem;
+        width: 100%;
+        position: relative;
+        right: 0;
+        
+        
+    }
+    .navbar{
+        position: relative !important;
+        
+    }
+    .container-fluid {
+        width: 100%;
+    }
+}

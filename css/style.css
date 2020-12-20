@@ -1,7 +1,24 @@
-
+/* pismo */
 .nadpis{
     position: relative;
     z-index: 1;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 0.5rem;
+}
+
+.vzdelani-nadpis{
+    text-align: center;
+    color: white;
+    padding-top: 3rem;
+    text-decoration: underline #DEC6B6 0.3rem;
+    text-underline-position: under;
+    font-family: 'Nunito', sans-serif;
+}
+.skola-nadpis{
+    font-family: 'Nunito', sans-serif;
+}
+.tabulka-skola-nadpis{
+    font-family: "ubuntu";
 }
 /* navbar */
 
@@ -9,10 +26,6 @@
 
 .navbar {
     background-color: #DEC6B6;
-    
-    
-    
-    
      
 }
 .navbar-brand {
@@ -27,7 +40,7 @@
 }
 
 .vl {
-    border-left: 7rem solid #6a097d;
+    border-left: 7rem solid #5C2626;
     height: 456%;
     position:absolute;
     z-index: 1;
@@ -40,7 +53,7 @@
 #uvod{
     background-color: #DEC6B6;
     color: white;
-    padding-bottom: 11%;
+    padding-bottom: 17%;
     
 
 }
@@ -50,8 +63,8 @@
     width: 80%;
     border-radius: 100%;
     position: absolute;
-    border: solid 1rem #8d1b9c;
-    right: 8rem;
+    border: solid 1rem #5C2626;
+    right: 25%;
     display: inline-flexbox;
     
  
@@ -59,7 +72,7 @@
 
 .jmeno{
     
-     background-color: #6a097d;
+     background-color: #5C2626;
     text-align: center;
     padding: 2rem;
     margin-top: 11rem;
@@ -69,43 +82,34 @@
     
     
 }
-@media(max-width: 1000px)
-{
-    .jmeno {
-        margin-top: 0rem;
-        margin-left: 0em;
-    }
-    .vl{
-        border: none;
-    }
 
-    .navbar-brand {
-        background-color: #DEC6B6;
-        position: static;
-        z-index: none;
-        color: black !important;
-  
-        
-    }
-    
-    .profilova-fotka {
-        border: none;
-        border-bottom: solid 0.3rem #5c2626;
-        border-radius: 0rem;
-        width: 100%;
-        position: relative;
-        right: 0;
-        
-        
-    }
-    .navbar{
-        position: relative !important;
-        
-    }
-    .container-fluid {
-        width: 100%;
-    }
+
+/* vzdelani */
+#vzdelani{
+    background-color: #5C2626;
+    text-align: center;
+    padding-bottom: 2rem;
 }
+.cepicka{
+    text-decoration: none;
+    margin-right: 0.4rem;
+}
+
+.secr, .vso{
+    background-color: #DEC6B6 !important;
+    text-align: center;
+    margin: 3rem;
+    height: 20rem;
+    
+}
+.vso-logo{
+    width: 40%;
+    
+}
+.secr-logo{
+    width: 40%;
+}
+ 
 
 
     

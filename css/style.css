@@ -20,6 +20,26 @@
 .tabulka-skola-nadpis{
     font-family: "ubuntu";
 }
+
+
+
+.zamestnani-nadpis{
+    text-align: center;
+    color: black;
+    padding-top: 3rem;
+    text-decoration: underline #5C2626 0.3rem;
+    text-underline-position: under;
+    font-family: 'Nunito', sans-serif;
+}
+.prace-nadpis{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+.tabulka-zamestnani-nadpis{
+    font-family: "ubuntu";
+    color: white !important;
+}
+
 /* navbar */
 
     
@@ -100,6 +120,7 @@
     text-align: center;
     margin: 3rem;
     height: 20rem;
+    border-radius: 4% !important;
     
 }
 .vso-logo{
@@ -109,7 +130,35 @@
 .secr-logo{
     width: 40%;
 }
- 
+  /* pracovni zkusenosti */
+
+  #zamestnani{
+    background-color: #DEC6B6;
+    text-align: center;
+    padding-bottom: 2rem;
+}
 
 
+.prace{
+    background-color:#5C2626 !important;
+    text-align: center;
+    margin: 3rem;
+    height: 73%;
+    
+    border-radius: 4% !important;
+    
+}
+.dm-logo{
+    width: 25%;
+    
+}
+
+.uol-logo{
+    width: 30%;
+
+}
+.npu-logo{
+    width: 55%;
+
+}
     

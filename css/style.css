@@ -228,4 +228,8 @@ p{
 .powerpoint-logo{
     width: 10%;
 }
+html {
+    scroll-behavior: smooth !important;
+
+}
 

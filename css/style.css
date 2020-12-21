@@ -193,7 +193,7 @@ p{
     color: white;
 }
 .kontejner{
-    margin-bottom: 2rem;
+    margin-bottom: 7rem !important;
 }
 .it{
     color: white;
@@ -202,30 +202,30 @@ p{
 }
 .kolonka{
     text-align: right;
-    
+    padding-bottom: 1.7rem;
 }
 .office{
     text-align: left;
 }
+.jazyky{
+    padding-bottom: 5.7rem;
+}
+.jine {
+    padding-bottom: 1rem;
+}
 
-.html-logo{
-    width: 10%;
-    
-}
-.css-logo{
+
+.html-logo,.css-logo,.bootstrap-logo,.word-logo,.excel-logo,.powerpoint-logo{
     width: 10%;
 }
-.bootstrap-logo{
-    width: 10%;
-    
+.francouzstina{
+    padding-top: 7rem !important;
 }
-.word-logo{
-    width: 10%;
-}
-.excel-logo{
+.dog{
     width: 10%;
 }
-.powerpoint-logo{
+
+.auto{
     width: 10%;
 }
 

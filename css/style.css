@@ -65,7 +65,10 @@ p{
 
 /* navbar */
 
-    
+html {
+    scroll-behavior: smooth !important;
+
+}  
 
 .navbar {
     background-color: #DEC6B6;

@@ -45,15 +45,18 @@
 .it{
     color: white;
     text-align: center;
-    font-size: 5rem;
+    font-size: 6rem;
     
 }
-
-.jazyky{
-    padding-bottom: 3rem;
+.progress{
+    height: 0.8rem !important;
 }
+.jazyky{
+    padding-bottom: 1.4rem;
+}
+
 .jine {
-    padding-bottom: 0.4rem;
+    padding-bottom: 0.5rem;
 }
 
 
@@ -62,7 +65,7 @@
 }
 
 .dog, .auto{
-    width: 13%;
+    width: 18%;
     font-size: 3rem;
 }
 

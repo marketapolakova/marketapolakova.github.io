@@ -38,4 +38,35 @@
     .container-fluid {
         width: 100%;
     }
+
+/* dovednosti */
+
+
+.it{
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+    
+}
+
+.jazyky{
+    padding-bottom: 3rem;
+}
+.jine {
+    padding-bottom: 1rem;
+}
+
+
+.html-logo,.css-logo,.bootstrap-logo,.word-logo,.excel-logo,.powerpoint-logo{
+    width: 12%;
+}
+
+.dog, .auto{
+    width: 15%;
+    font-size: 3rem;
+}
+
+.cop{
+    font-size: 1rem;
+}
 }

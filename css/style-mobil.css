@@ -53,7 +53,7 @@
     padding-bottom: 3rem;
 }
 .jine {
-    padding-bottom: 1rem;
+    padding-bottom: 0.4rem;
 }
 
 
@@ -62,7 +62,7 @@
 }
 
 .dog, .auto{
-    width: 15%;
+    width: 13%;
     font-size: 3rem;
 }
 

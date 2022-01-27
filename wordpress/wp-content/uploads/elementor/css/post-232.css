@@ -1,7 +1,8 @@
 .elementor-232 .elementor-element.elementor-element-b880e55:not(.elementor-motion-effects-element-type-background),
 .elementor-232 .elementor-element.elementor-element-b880e55>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background: url("/Users/marketapolakova/Downloads/simply-static-1-1643226096/wp-content/uploads/2022/01/Screenshot.png") 50% 50%;
-    background-size: cover;
+    background: url("/Users/marketapolakova/Desktop/webdev-own/Wordpress/marketapolakova.github.io/wordpress/wp-content/uploads/2022/01/Screenshot.png") 50% 50%;
+    background-size: auto;
+    height: 100vh;
 }
 
 .elementor-232 .elementor-element.elementor-element-b880e55>.elementor-background-overlay {
@@ -86,6 +87,7 @@
     border-style: solid;
     border-width: 1px 1px 1px 1px;
     border-color: #B7E0EF;
+   
 }
 
 .elementor-232 .elementor-element.elementor-element-321f0d9 .elementor-button:hover,

@@ -1,0 +1,116 @@
+.elementor-232 .elementor-element.elementor-element-b880e55:not(.elementor-motion-effects-element-type-background),
+.elementor-232 .elementor-element.elementor-element-b880e55>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+    background: url("/Users/marketapolakova/Downloads/simply-static-1-1643226096/wp-content/uploads/2022/01/Screenshot.png") 50% 50%;
+    background-size: cover;
+}
+
+.elementor-232 .elementor-element.elementor-element-b880e55>.elementor-background-overlay {
+    background-color: #000000;
+    opacity: 0.55;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.elementor-232 .elementor-element.elementor-element-b880e55 {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.elementor-232 .elementor-element.elementor-element-f53d437 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.elementor-232 .elementor-element.elementor-element-a3999b9 .elementor-spacer-inner {
+    height: 10px;
+}
+
+.elementor-232 .elementor-element.elementor-element-0690128 .elementor-heading-title {
+    color: #FFFFFF;
+    font-family: "Roboto", Sans-serif;
+    font-size: 127px;
+    font-weight: 600;
+}
+
+.elementor-232 .elementor-element.elementor-element-06da0ea .elementor-heading-title {
+    color: #FFFFFF00;
+    font-family: "Roboto", Sans-serif;
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 1.6px;
+    word-spacing: 0px;
+    -webkit-text-stroke: 1px;
+    stroke-width: 1px;
+    -webkit-text-stroke-color: #B7E0EF;
+    stroke: #B7E0EF;
+}
+
+.elementor-232 .elementor-element.elementor-element-06da0ea>.elementor-widget-container {
+    margin: 0px 0px 0px 0px;
+}
+
+.elementor-232 .elementor-element.elementor-element-eaab449 .elementor-heading-title {
+    color: #FFFFFF;
+    font-family: "Roboto", Sans-serif;
+    font-size: 104px;
+    font-weight: 700;
+}
+
+.elementor-232 .elementor-element.elementor-element-eaab449 {
+    z-index: 0;
+}
+
+.elementor-232 .elementor-element.elementor-element-eaab449>.elementor-widget-container {
+    --e-transform-translateY: 0px;
+}
+
+.elementor-232 .elementor-element.elementor-element-183d03c .elementor-heading-title {
+    color: #6EC1E400;
+    font-family: "Roboto", Sans-serif;
+    font-size: 62px;
+    font-weight: 600;
+    -webkit-text-stroke: 1px;
+    stroke-width: 1px;
+    -webkit-text-stroke-color: #B7E0EF;
+    stroke: #B7E0EF;
+}
+
+.elementor-232 .elementor-element.elementor-element-aa355c8 .elementor-spacer-inner {
+    height: 105px;
+}
+
+.elementor-232 .elementor-element.elementor-element-321f0d9 .elementor-button {
+    fill: #B7E0EF;
+    color: #B7E0EF;
+    background-color: #61CE7000;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #B7E0EF;
+}
+
+.elementor-232 .elementor-element.elementor-element-321f0d9 .elementor-button:hover,
+.elementor-232 .elementor-element.elementor-element-321f0d9 .elementor-button:focus {
+    color: #133441;
+    background-color: #FFFFFF;
+}
+
+.elementor-232 .elementor-element.elementor-element-321f0d9 .elementor-button:hover svg,
+.elementor-232 .elementor-element.elementor-element-321f0d9 .elementor-button:focus svg {
+    fill: #133441;
+}
+
+@media(max-width:1024px) {
+    .elementor-232 .elementor-element.elementor-element-aa355c8 .elementor-spacer-inner {
+        height: 47px;
+    }
+}
+
+@media(max-width:767px) {
+    .elementor-232 .elementor-element.elementor-element-06da0ea .elementor-heading-title {
+        font-size: 55px;
+    }
+
+    .elementor-232 .elementor-element.elementor-element-eaab449 .elementor-heading-title {
+        font-size: 47px;
+    }
+}

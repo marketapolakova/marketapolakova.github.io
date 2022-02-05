@@ -4,7 +4,7 @@ document.querySelector('.btn-rules').addEventListener('click', function () {
 });
 
 //close rules
-document.querySelector('.btn-close').addEventListener('click', function () {
+document.querySelector('.close').addEventListener('click', function () {
     document.querySelector('.rules').style.display = 'none';
 });
 
@@ -23,7 +23,7 @@ function game() {
             playerChoice = select[index];
             computerChoice = select[random];
             //displaying player choice
-            document.querySelector('.background').style.display = 'none';
+            document.querySelector('.container').style.display = 'none';
             document.querySelector('.picked').style.display = 'block';
             document.querySelector('.picked-' + select[index]).style.display = 'block';
             //displaying computer choice
@@ -54,7 +54,7 @@ function game() {
 
 //new game
 document.querySelector('.play').addEventListener('click', function () {
-    document.querySelector('.background').style.display = 'block';
+    document.querySelector('.container').style.display = 'block';
     document.querySelector('.picked').style.display = 'none';
     document.querySelector('.picked-paper').style.display = 'none';
     document.querySelector('.picked-scissors').style.display = 'none';

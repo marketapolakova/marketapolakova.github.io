@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/c156b99608.js" crossorigin="anonymous"></script>
+    <!-- google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div class="wrapper">
+
+            <div class="one">
+                <img src="../images/logo.svg" alt="ROCK PAPER SCISSORS">
+            </div>
+
+            <div class="two">
+                <p class="text">SCORE</p>
+                <p class="number">0</p>
+            </div>
+        </div>
+        <!-- player chooose -->
+        <div class="background">
+            <div class="container">
+                <div class="slice">
+                    <div class="paper">
+                        <img class="img-paper" src="../images/icon-paper.svg" alt="paper">
+                    </div>
+                    <div class="scissors">
+                        <img class="img-scissors" src="../images/icon-scissors.svg" alt="scissors">
+                    </div>
+
+                </div>
+                <div class="rock">
+                    <img class="img-rock" src="../images/icon-rock.svg" alt="rock">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- What player choose -->
+        <div class="picked">
+            <div class="container-picked">
+                <div class="player-picked">
+                    <h4>YOU PICKED</h4>
+
+                    <div class="picked-scissors">
+
+                    </div>
+                    <div class="picked-paper">
+
+                    </div>
+                    <div class="picked-rock">
+
+                    </div>
+                    <div class="circle-container">
+                        <div class="circle" style="animation-delay: 0s"></div>
+                        <div class="circle" style="animation-delay: 1s"></div>
+                        <div class="circle" style="animation-delay: 2s"></div>
+                        <div class="circle" style="animation-delay: 3s"></div>
+                    </div>
+
+                    
+                   
+              
+  
+          <!-- result and play again -->
+                    <div class="result">
+                         <h3 class="heading-result"></h3>
+                         <div class="play">
+                             <p class="play-again">PLAY AGAIN</p>
+                         </div>
+                         
+                    </div>
+                   
+                </div>
+          <!-- What computer choose -->
+                <div class="computer-picked">
+                    <h4>THE HOUSE PICKED</h4>
+                    <div class="computer-none">
+
+                    </div>
+                    <div class="computer-paper">
+
+                    </div>
+                    <div class="computer-scissors">
+
+                    </div>
+                    <div class="computer-rock">
+                    </div>
+                    <div class="computer-circle-container">
+                        <div class="circle-computer" style="animation-delay: 0s"></div>
+                        <div class="circle-computer" style="animation-delay: 1s"></div>
+                        <div class="circle-computer" style="animation-delay: 2s"></div>
+                        <div class="circle-computer" style="animation-delay: 3s"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- rules -->
+        <div class="rules">
+            <div class="bg-rules">
+                <div class="container-rules">
+                    <div class="btn-close">
+
+                        <div class="close"></div>
+                    </div>
+
+                    <div class="heading">
+                        <h1>RULES</h1>
+                    </div>
+                </div>
+
+
+                <img class="img-rules" src="../images/image-rules.svg" alt="rules">
+            </div>
+
+        </div>
+        <button class="btn-rules">RULES</button>
+        <script src="index.js"></script>
+</body>
+
+</html>

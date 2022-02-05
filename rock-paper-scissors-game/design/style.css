@@ -229,6 +229,9 @@ h1 {
     width: 1rem;
     background: none;
     padding: 15% 0 0 63%;
+    position: absolute;
+    z-index: 1;
+    
 }
 
 
@@ -598,7 +601,7 @@ p:hover {
 
 /* mobile version */
 @media only screen and (max-width: 411px) {
-    */
+
     /* score*/
 
     .wrapper {

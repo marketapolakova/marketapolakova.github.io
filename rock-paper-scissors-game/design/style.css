@@ -245,25 +245,27 @@ h1 {
 .container-picked {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 4.5%);
     width: 100%;
-    height: 25rem;
     background: none;
 }
 
 .player-picked {
     grid-column: 1;
-    grid-row: 1;
-    height: 3.5rem;
-    width: 100%;
+    grid-row-start: 4;
+    grid-row-end: 4;
     background: none;
+    justify-self: center;
+    margin: 1.3rem 0 0 0;
 }
 
 .computer-picked {
     grid-column: 3;
-    grid-row: 1;
-    height: 3.5rem;
-    width: 100%;
+    grid-row-start: 4;
+    grid-row-end: 4;
     background: none;
+    justify-self: center;
+    margin: 1.3rem 0 0 0;
 
 }
 
@@ -272,6 +274,19 @@ h4 {
     font-size: 1.2rem;
     text-align: center;
     font-weight: 200px;
+}
+.heading-player{
+    position: relative;
+    z-index: 3;
+    grid-column: 1;
+    grid-row: 1;
+}
+.heading-house{
+    position: relative;
+    z-index: 3;
+    grid-column: 3;
+    grid-row: 1;
+
 }
 
 .picked-scissors,
@@ -282,12 +297,10 @@ h4 {
 .computer-scissors {
     width: 13rem;
     height: 13rem;
-    margin: 0;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
     border-radius: 50%;
     display: none;
+   position: relative;
+   z-index: 2;
 
 }
 
@@ -319,7 +332,7 @@ h4 {
     border: 30px #DC3853 solid;
     box-shadow: 0px 10px #9D1535, inset 0em 10px #BABFD7;
     background-size: 5rem;
-    display: none;
+    
 }
 
 .computer-paper {
@@ -337,16 +350,124 @@ h4 {
 .computer-none {
     width: 13rem;
     height: 13rem;
-    margin: 0;
-    position: relative;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%);
+    grid-column: 3;
+    grid-row-start: 4;
+    justify-self: center;
     border-radius: 50%;
     background: #172240;
     background-size: 5rem;
 
 }
+
+
+
+/* pulsing circle */
+
+.circle1{
+    grid-column: 1;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    justify-self: center;
+    width: 27rem;
+    height: 27rem;
+    border-radius: 50%;
+    background: #1E2949;
+    animation: scaleIn 2s infinite ;
+    position: relative;
+    z-index: 1;
+    display: none;
+}
+
+.circle2{
+    grid-column: 1;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    justify-self: center;
+    width: 23rem;
+    height: 23rem;
+    border-radius: 50%;
+    background: #222C4B ;
+    position: relative;
+    z-index: 1;
+    animation: scaleIn 2s infinite ;
+    display: none;
+}
+.circle3{
+    grid-column: 1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    justify-self: center;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background: #293251;
+    position: relative;
+    z-index: 1;
+    animation: scaleIn 2s infinite ;
+    display: none;
+}
+
+.circle1-comp{
+    grid-column: 3;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    background: none;
+    justify-self: center;
+    width: 27rem;
+    height: 27rem;
+    border-radius: 50%;
+    background: #222848;
+    animation: scaleIn 2s infinite ;
+    position: relative;
+    z-index: 1;
+    display: none;
+}
+.circle2-comp{
+    grid-column: 3;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    justify-self: center;
+    width: 23rem;
+    height: 23rem;
+    border-radius: 50%;
+    background: #222C4B ;
+    position: relative;
+    z-index: 1;
+    animation: scaleIn 2s infinite ;
+    display: none;
+}
+.circle3-comp{
+    grid-column: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    justify-self: center;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background: #293251;
+    position: relative;
+    z-index: 1;
+    animation: scaleIn 2s infinite ;
+    display: none;
+
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(1, 1);
+       
+    }
+    50% {
+        transform: scale(1.2, 1.2);
+     
+    }
+
+    to {
+        transform: scale(1, 1);
+        
+    }
+}
+
 
 /* result and play again */
 .result {
@@ -394,53 +515,6 @@ p:hover {
 }
 
 
-/* pulsing */
-.circle-container,
-.computer-circle-container {
-    background: none;
-    display: none;
-
-
-}
-
-.circle,
-.circle-computer {
-    border-radius: 50%;
-    border: solid 100px #2B3654;
-    width: 34rem;
-    height: 34rem;
-    background: none;
-    opacity: 0;
-    animation: scaleIn 4s infinite cubic-bezier(.5, .12, .29, .54);
-}
-
-.circle {
-    position: absolute;
-    top: 2.3%;
-    left: -.7%;
-    transform: translate(-50%, -50%);
-
-}
-
-.circle-computer {
-    position: absolute;
-    top: 2.3%;
-    left: 49.2%;
-    transform: translate(-50%, -50%);
-
-}
-
-@keyframes scaleIn {
-    from {
-        transform: scale(.5, .5);
-        opacity: .5;
-    }
-
-    to {
-        transform: scale(.7, .7);
-        opacity: 0;
-    }
-}
 
 
 
@@ -518,27 +592,38 @@ p:hover {
     h4 {
         font-size: 1rem;
     }
+    .heading-house{
+        grid-row: 2;
+        grid-column: 2;
+
+    }
+    .heading-player{
+        grid-row: 2;
+        grid-column: 1;
+    }
 
     .container-picked {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 7rem);
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+
+      
 
     }
 
     .player-picked {
-        grid-column: 1;
-        grid-row: 1;
-        height: 3.5rem;
-        width: 100%;
+grid-row: 1;
+grid-column: 1;
+
+  
+        
     }
 
     .computer-picked {
-        grid-column: 2;
         grid-row: 1;
-        height: 3.5rem;
-        width: 100%;
-
+        grid-column: 2;
+      
+  
+        
     }
 
 
@@ -551,6 +636,7 @@ p:hover {
     .computer-scissors {
         width: 7rem;
         height: 7rem;
+
     }
 
     .picked-paper,
@@ -577,10 +663,16 @@ p:hover {
     .computer-none {
         width: 7rem;
         height: 7rem;
-        top: 50%;
-        left: 50%;
         background-size: 3rem;
     }
+
+    /* pulsing circle */
+
+
+
+.circle1, .circle2, .circle3, .circle1-comp, .circle2-comp, .circle3-comp {
+    display: none!important;
+}
 
     /* result and play again */
 
@@ -597,7 +689,7 @@ p:hover {
     }
 
 
-}
+
 
 /* mobile version */
 @media only screen and (max-width: 411px) {

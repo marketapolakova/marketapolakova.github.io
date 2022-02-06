@@ -37,11 +37,15 @@ function game() {
                
             } else if (computerChoice === 'paper' && playerChoice === 'scissors' || computerChoice === 'rock' && playerChoice === 'paper' || computerChoice === 'scissors' && playerChoice === 'rock') {
                 document.querySelector(".heading-result").innerHTML = "You win";
-                document.querySelector(".circle-container").style.display = "block";
+                document.querySelector(".circle1").style.display = "block";
+                document.querySelector(".circle2").style.display = "block";
+                document.querySelector(".circle3").style.display = "block";
                 score++;
             } else if (computerChoice === 'scissors' && playerChoice === 'paper' || computerChoice === 'rock' && playerChoice === 'scissors' || computerChoice === 'paper' && playerChoice === 'rock') {
                 document.querySelector(".heading-result").innerHTML = "You lose";
-                document.querySelector(".computer-circle-container").style.display = "block";
+                document.querySelector(".circle1-comp").style.display = "block";
+                document.querySelector(".circle2-comp").style.display = "block";
+                document.querySelector(".circle3-comp").style.display = "block";
                 score--;
             }
             //display score
@@ -64,7 +68,12 @@ document.querySelector('.play').addEventListener('click', function () {
     document.querySelector('.computer-rock').style.display = 'none';
     document.querySelector('.computer-none').style.display = 'block';
     document.querySelector('.result').style.display = 'none';
-    document.querySelector(".computer-circle-container").style.display = "none";
-    document.querySelector(".circle-container").style.display = "none";
+    document.querySelector(".heading-result").innerHTML = "You win";
+    document.querySelector(".circle1").style.display = "none";
+    document.querySelector(".circle2").style.display = "none";
+    document.querySelector(".circle3").style.display = "none";
+    document.querySelector(".circle1-comp").style.display = "none";
+    document.querySelector(".circle2-comp").style.display = "none";
+    document.querySelector(".circle3-comp").style.display = "none";
 
 });

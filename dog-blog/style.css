@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; */
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 0;
+    background-color: #353435;
+}
+img{
+    height: 40rem;
+}
+
+.content{
+    margin: 0 15rem;
+    align-items: center;
+
+
+    
+}
+
+
+
+#container{
+      background-color:white;
+    position: absolute;
+    top: 0;
+ 
+
+}
+/* About page */
+
+.about{
+  background-image: url('https://images.unsplash.com/photo-1489440543286-a69330151c0b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+background-position: bottom;
+
+  width: 100vw;
+height: 30rem;
+}
+
+.bg-color{
+  background-color: #000000b0;
+  width: 100vw;
+  height: 30rem;
+  text-align: center;
+  padding-top: 18rem;
+  font-size: 3rem;
+  color: white;
+}
+
+.animation{
+     -webkit-animation: rotate-tl 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: rotate-tl .5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    
+}
+
+/* contact page */
+.contact{
+  height: 30%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.671);
+  color: white;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  text-align: center;
+  display: none;
+
+}
+.contact-blur{
+  background-image: url('https://images.pexels.com/photos/7788657/pexels-photo-7788657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-position: center;
+  background-size: cover;
+  filter: blur(10px);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.hastag{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  cursor: pointer;
+
+
+}
+.btn{
+ animation: pulsate-fwd 1s ease-in-out infinite both; 
+
+  background-color:rgb(255,136,122); 
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+}
+.hastag-div{
+  position: absolute;
+  left: 43%;
+  top: 52%;
+  transform: translate(-50%, -50%);
+  width: 1rem;
+  cursor: pointer;
+}
+h4{
+  font-size: 3rem;
+
+}
+@keyframes pulsate-fwd {
+  0% {
+    transform: scale(1);
+    background-color:rgb(255,136,122); 
+  }
+  50% {
+    transform: scale(1.1);
+    background-color:rgba(255, 135, 122, 0.671); 
+  }
+  100% {
+    transform: scale(1);
+    background-color:rgb(255,136,122); 
+  }
+}
+
+.fab{
+  margin-left: 1.5rem;
+  
+}
+
+
+@keyframes rotate-tl {
+    0% {
+      transform: rotate(0);
+      transform-origin: top left;
+    }
+    100% {
+      transform: rotate(-13deg);
+      transform-origin: top left;
+    }
+  }
+
+  .close{
+    -webkit-animation: rotate-back 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: rotate-back .5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    
+}
+
+
+
+@keyframes rotate-back {
+    0% {
+      transform: rotate(-13deg);
+      transform-origin: top left;
+    }
+    100% {
+      transform: rotate(0deg);
+      transform-origin: top left;
+    }
+  }
+
+.burger{
+    padding: 0;
+    margin-bottom: .15rem;
+    width: 1rem;
+    border-bottom: solid .18rem white;
+
+}
+#menu{
+
+    background-color: rgb(255,136,122);
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+    border-radius: 0 0rem 10rem 0;
+    position: absolute;
+    z-index: 2;
+  
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.rotateBurger{
+    animation: rotate-90-top-ccw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    cursor: pointer;
+}
+
+@keyframes rotate-90-top-ccw {
+    0% {
+      transform: rotate(-180deg);
+      transform-origin: top;
+    }
+    100% {
+      transform: rotate(0deg);
+      transform-origin: top;
+    }
+  }
+  
+  .rotateX{
+    animation: rotate-90-down-ccw 0.4s ;
+}
+
+@keyframes rotate-90-down-ccw {
+    0% {
+     
+      transform: rotate(180deg);
+      transform-origin: bottom;
+    }
+    100% {
+      transform: rotate(0deg);
+      transform-origin: bottom;
+    }
+  }
+  
+#x{
+    display: none;
+    color: white;
+  
+}
+
+#navbar{
+    color: white;
+    font-size: large;
+    position: absolute;
+    bottom: 1rem;
+    margin: .5rem;
+   
+}
+
+.slide{
+    animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes slide-right {
+    0% {
+      transform: translateX(-100px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+    
+
+.fa-user{
+margin: 1rem;
+}
+.fa-envelope{
+margin-left: 2rem;
+}
+
+
+
+
